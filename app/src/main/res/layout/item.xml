@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:background="@drawable/loginroundborder"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:src="@drawable/house6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HouseOwnerName:"
+                    android:textSize="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/beautifulpeople"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/honame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="3dp"
+                    android:fontFamily="@font/markdemo"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:textSize="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/beautifulpeople"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/holocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/markdemo"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rent Fee:"
+                    android:textSize="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/beautifulpeople"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/horentfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred Family Type:"
+                    android:textSize="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/beautifulpeople"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/hofamiltytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/markdemo"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Advance Amount:"
+                    android:textSize="10dp"
+                    android:layout_marginStart="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/beautifulpeople"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:id="@+id/hoadvance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+                    android:padding="2dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture Type"
+            android:textSize="10dp"
+            android:fontFamily="@font/beautifulpeople"
+            android:textColor="@color/green"
+            android:layout_margin="5dp"
+            android:padding="3dp"/>
+
+        <TextView
+            android:id="@+id/hofurniture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:fontFamily="@font/markdemo"
+            android:textColor="@color/black"
+            android:layout_margin="5dp"
+            android:padding="3dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/clicktoviewfulldetails"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:background="#1F749F"
+                android:padding="2dp"
+                android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+                android:text="Click To View Full Details"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="2dp"
+            android:background="#E80E09"
+            android:padding="2dp"
+            android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+            android:text="Delete this property"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontpage"
+    android:background="#BFC1C3"
+
+    >
+
+    <TextView
+        android:id="@+id/nobroker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNECT"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#0C454C"
+        android:fontFamily="@font/mrfink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+
+
+        />
+    <TextView
+        android:id="@+id/idnocommision"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/nobroker"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="DIGITALLY"
+        android:textSize="30dp"
+        android:textColor="#0A435C"
+        android:fontFamily="@font/mrfink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/houseimage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/roundborder"
+        android:src="@drawable/house8"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/virtual"
+        android:layout_below="@+id/houseimage"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="VIRTUAL"
+        android:layout_centerHorizontal="true"
+        android:textColor="#054A07"
+        android:textSize="40dp"
+        android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+        />
+
+    <TextView
+        android:id="@+id/bro"
+        android:layout_below="@+id/virtual"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="BROKERAGE"
+        android:textColor="#054A07"
+        android:textSize="40dp"
+        android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+        />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_below="@+id/bro"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center"
+        android:text="Welcome To Virtual Brokerage App. This app helps the customers buy or search the house for rent .This App also let the houseowner to post their property for rent or sale"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#044F8A"
+        android:textSize="17dp"
+        android:fontFamily="@font/miracle"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="20dp"
+        android:padding="10px"
+        >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/tripdenied1"
+        android:text="EXPLORE NOW"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:padding="20px"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="GET STARTED"
+        android:id="@+id/getstarted"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/black"
+        android:backgroundTint="#1E81BC"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="35dp"
+        android:padding="10dp"
+
+
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

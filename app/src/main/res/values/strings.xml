@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Online Brokerage</string>
+    <string name="hyperlink"><a href="customerloginpage.class">SIGN UP</a></string>
+    <!-- link for practice textview-->
+    <string name="hyperlink2"><a href="https://practice.geeksforgeeks.org/">practice.geeksforgeeks.org</a></string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+
+    <string name="drop">dropDownMenuExample</string>
+    <string-array name="languages">
+        <item>Family</item>
+        <item>Bachelor</item>
+
+    </string-array>
+
+</resources>

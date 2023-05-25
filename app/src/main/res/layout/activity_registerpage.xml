@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D6D6"
+
+    tools:context=".registerpage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="396dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/createaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/mrfink"
+        android:text="CREATE  ACCOUNT !"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@id/createaccount"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/typeusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/registerpagesroundedborder"
+        android:drawableLeft="@drawable/baseline_person_24green"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter Your Username"
+        android:padding="7dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/signup"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/emailaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/registerpagesroundedborder"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Enter Your Email Address"
+        android:padding="7dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/green"
+        android:textColorHint="#D5056740"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/typeusername"
+         />
+
+
+    <EditText
+        android:id="@+id/typepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/registerpagesroundedborder"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:hint="Enter Your Password"
+        android:padding="7dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/emailaddress"
+        />
+
+    <EditText
+        android:id="@+id/typerepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/registerpagesroundedborder"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:hint="Confirm Your Password"
+        android:padding="7dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/typepassword"
+        />
+
+    <RadioGroup
+        android:id="@+id/selectusertype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintTop_toBottomOf="@id/typerepassword"
+        android:backgroundTint="@color/green"
+
+
+
+        >
+
+        <RadioButton
+            android:id="@+id/customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="7dp"
+            android:backgroundTint="@color/black"
+            android:text="Customer"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/HouseOwner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="0dp"
+            android:paddingLeft="7dp"
+            android:text="HouseOwner"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/roundedborderslogin"
+        android:fontFamily="@font/mrfink"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/selectusertype"
+
+
+    />
+
+    <TextView
+        android:id="@+id/signupusing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="7dp"
+        android:text="Or Sign Up Using"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/register"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/bottom"
+        android:layout_marginTop="520dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/signupusing"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/registerpagesroundedborder"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/google"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="3dp"
+            android:text="Sign up with google"
+            android:textColor="@color/green"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebbok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="45dp"
+            android:background="@drawable/registerpagesroundedborder"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/facebook"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="3dp"
+            android:text="Sign up with Facebook"
+            android:textColor="@color/green"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

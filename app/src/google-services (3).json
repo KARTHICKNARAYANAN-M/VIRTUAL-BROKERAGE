@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "456661754038",
+    "firebase_url": "https://online-brokerage-default-rtdb.firebaseio.com",
+    "project_id": "online-brokerage",
+    "storage_bucket": "online-brokerage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456661754038:android:2d46d95a325f8d687f4617",
+        "android_client_info": {
+          "package_name": "com.example.onlinebrokerage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456661754038-lab3k0etb9m3kjnetpmiibgk0evqql0g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.onlinebrokerage",
+            "certificate_hash": "94ab69c54916ec29eb4f3ea91c675324aaf41660"
+          }
+        },
+        {
+          "client_id": "456661754038-tungrmvshl8c9a8n7c813tsl7547n7f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxRM7FeFoT205T24EI_vCKKqovW3zEAzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456661754038-63jj1c5633rup6kv2e0nfav4jnighkaf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

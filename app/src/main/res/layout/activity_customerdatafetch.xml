@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".customerdatafetch">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:id="@+id/des"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="30dp"
+               android:text="Search Home here Using Various Filters"
+               android:textSize="15dp"
+               android:fontFamily="@font/sparkystones"
+               android:textColor="#56baed"/>
+
+           <EditText
+               android:id="@+id/location"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:background="@drawable/registerpagesroundedborder"
+               android:hint="Enter Your Preferred Location"
+               android:textSize="20dp"
+               android:drawableLeft="@drawable/baseline_location_city_24"
+               android:textColor="@color/green"
+               android:textColorHint="@color/green"
+               android:padding="3dp"
+               android:fontFamily="@font/markdemo"
+               android:layout_marginStart="20dp"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="#fff"
+
+               android:layout_marginTop="10dp">
+
+
+               <EditText
+                   android:id="@+id/rentallot"
+                   android:layout_width="120dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:background="@drawable/registerpagesroundedborder"
+                   android:hint="Rent-Fee"
+                   android:textSize="15dp"
+                   android:drawableLeft="@drawable/baseline_feed_24"
+                   android:textColor="@color/green"
+                   android:textColorHint="@color/green"
+                   android:padding="3dp"
+                   android:fontFamily="sans-serif-condensed"
+                   android:layout_marginStart="20dp"/>
+
+               <EditText
+                   android:id="@+id/adv"
+                   android:layout_width="140dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:gravity="center"
+                   android:background="@drawable/registerpagesroundedborder"
+                   android:hint="Advance-Amount"
+                   android:textSize="15dp"
+                   android:drawableLeft="@drawable/baseline_feed_24"
+                   android:textColor="@color/green"
+                   android:textColorHint="@color/green"
+                   android:padding="3dp"
+                   android:fontFamily="sans-serif-condensed"
+                   android:layout_marginStart="20dp"/>
+
+
+
+
+
+
+
+           </LinearLayout>
+
+           <Spinner
+               android:layout_width="250dp"
+               android:layout_height="35dp"
+               android:id="@+id/spinner"
+               android:layout_marginTop="15dp"
+               android:layout_marginStart="15dp"
+               android:background="@android:drawable/btn_dropdown"/>
+
+           <Spinner
+               android:layout_width="250dp"
+               android:layout_height="35dp"
+               android:id="@+id/spinner1"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:background="@android:drawable/btn_dropdown"/>
+
+
+           <EditText
+               android:id="@+id/area"
+               android:layout_width="250dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:background="@drawable/registerpagesroundedborder"
+               android:hint="Enter Your Preferred Area"
+               android:textSize="20dp"
+               android:drawableLeft="@drawable/baseline_location_city_24"
+               android:textColor="@color/green"
+               android:textColorHint="@color/green"
+               android:padding="3dp"
+               android:fontFamily="@font/markdemo"
+               android:layout_marginStart="20dp"/>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+           <Spinner
+               android:layout_width="250dp"
+               android:layout_height="35dp"
+               android:id="@+id/spinner2"
+               android:layout_marginTop="10dp"
+               android:layout_marginStart="15dp"
+               android:background="@android:drawable/btn_dropdown"/>
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/searches"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginTop="10dp"
+                   android:text="Search"
+                   android:fontFamily="@font/goldropspersonaluseregular9ynn5"
+                   android:textColor="#56BAED"
+                   android:background="@drawable/registerpagesroundedborder"/>
+
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/noprop"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="sans-serif-condensed"
+               android:textSize="20dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="20dp"
+               android:gravity="center"
+               android:layout_marginTop="15dp"
+               android:textColor="#B8100C"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recyclerView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="5dp"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+           android:layout_marginTop="30dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+   </ScrollView>
+
+
+
+
+</RelativeLayout>
